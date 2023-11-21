@@ -1,6 +1,6 @@
 import bgImage from "../assets/bg.png";
 import Logo from "../assets/Logo.png";
-import { BiSearchAlt } from "react-icons/Bi";
+import { BiSearchAlt } from "react-icons/bi";
 import municipalities from "../areas/municipalities";
 import barangays from "../areas/barangays";
 import image1 from "../assets/Group 1.png";
