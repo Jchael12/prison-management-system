@@ -244,7 +244,7 @@ const Form = ({ searchQuery, handleInputChange, handleSearch }) => {
               ))}
             </select>
           </div>
-          {/* end of dropdown */}
+          {/* end of dropdowns */}
 
           <button
             className="md:static absolute bottom-[-150px] left-[-120px] btn btn-primary w-52 lg:w-full md:w-2/2 mt-10 md:mt-24 md:ml-5 lg:ml-72"
