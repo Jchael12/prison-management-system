@@ -1,6 +1,6 @@
 # Prison Management System 
 
-test it here - [Prison Management System](https://jchael12.github.io/prison-management-system/)
+Link - [Prison Management System](https://jchael12.github.io/prison-management-system/)
 
 ## Description
 
