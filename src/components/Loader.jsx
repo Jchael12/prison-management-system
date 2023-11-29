@@ -8,7 +8,7 @@ const Loader = () => {
           <div className="top"></div>
           <div className="bottom"></div>
         </div>
-        <div className="title">Preparing data files ...</div>
+        <div className="title">Preparing data files . . .</div>
       </div>
     </div>
   );

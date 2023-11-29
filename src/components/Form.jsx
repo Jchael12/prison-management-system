@@ -59,7 +59,7 @@ const Form = ({ searchQuery, handleInputChange, handleSearch }) => {
     <>
       <div>
         {loading ? (
-          <div className="flex items-center justify-center w-full h-screen transition duration-500 bg-sky-950">
+          <div className="flex items-center justify-center w-full h-screen transition duration-500 bg-sky-800">
             <Loader />
           </div>
         ) : (

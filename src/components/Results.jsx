@@ -158,8 +158,8 @@ const Results = ({ searchResults, handleBackToSearch, resetForm }) => {
           })
         ) : (
           <h1 className="absolute left-32 text-xl">
-            We found <span className="font-semibold">0 matches</span> from
-            inmate name
+            We found <span className="font-semibold">0 matches</span> that
+            inmate name.
           </h1>
         )}
       </div>
