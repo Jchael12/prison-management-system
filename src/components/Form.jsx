@@ -13,6 +13,11 @@ import Loader from "./Loader";
 
 const Form = ({ searchQuery, handleInputChange, handleSearch }) => {
   const [loading, setLoading] = useState(true);
+  const [agree, setAgree] = useState(false);
+
+  const handleAgreement = () => {
+    setAgree(!agree);
+  };
 
   useEffect(() => {
     //simulate initial loading delay
@@ -185,7 +190,7 @@ const Form = ({ searchQuery, handleInputChange, handleSearch }) => {
                 <div className="w-full mt-5 max-w-xs z-50 relative">
                   <label className="label flex flex-col items-start">
                     <span className="label-text text-xl text-white font-semibold">
-                      Data of Birth
+                      Date of Birth
                     </span>
                     <span className="label-text text-md text-white italic">
                       (MM/DD/YYYY)
@@ -267,6 +272,27 @@ const Form = ({ searchQuery, handleInputChange, handleSearch }) => {
                     ))}
                   </select>
                 </div>
+                {/* Users Agreement checkbox and inline link */}
+                <div className="absolute bottom-[350px] flex items-center mt-4 p-2 text-white">
+                  <input
+                    type="checkbox"
+                    className="form-checkbox h-5 w-5 text-blue-500"
+                    checked={agree}
+                    onChange={handleAgreement}
+                  />
+                  <label htmlFor="agree" className="ml-2">
+                    I agree to the{" "}
+                    <a
+                      href="/users-agreement"
+                      className="text-indigo-900 font-semibold hover:underline"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Users Agreement
+                    </a>
+                  </label>
+                </div>
+                {/* end of Users Agreement */}
                 {/* end of dropdowns */}
 
                 <button
