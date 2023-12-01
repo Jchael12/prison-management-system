@@ -276,7 +276,7 @@ const Form = ({ searchQuery, handleInputChange, handleSearch }) => {
                 <div className="absolute lg:bottom-[350px] md:bottom-[130px] bottom-[3px] md:left-auto left-[-280px] flex items-center mt-4 p-2 text-white">
                   <input
                     type="checkbox"
-                    className="form-checkbox h-5 w-5 md:text-blue-500 text-yellow-300 focus:ring-current"
+                    className="form-checkbox h-5 w-5 md:text-blue-500 text-yellow-300 focus:ring-transparent"
                     checked={agree}
                     onChange={handleAgreement}
                   />
