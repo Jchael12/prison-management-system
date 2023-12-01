@@ -206,7 +206,7 @@ const Form = ({ searchQuery, handleInputChange, handleSearch }) => {
                     onChange={handleBirthdateChange}
                   />
                 </div>
-                <p className="text-white mt-8 italic">
+                <p className="text-white my-4 italic hidden md:block">
                   For more information you may be onbtained by requesting to
                   doc.PDL@example.com
                 </p>
@@ -273,10 +273,10 @@ const Form = ({ searchQuery, handleInputChange, handleSearch }) => {
                   </select>
                 </div>
                 {/* Users Agreement checkbox and inline link */}
-                <div className="absolute bottom-[350px] flex items-center mt-4 p-2 text-white">
+                <div className="absolute lg:bottom-[350px] md:bottom-[130px] bottom-[3px] md:left-auto left-[-280px] flex items-center mt-4 p-2 text-white">
                   <input
                     type="checkbox"
-                    className="form-checkbox h-5 w-5 text-blue-500"
+                    className="form-checkbox h-5 w-5 md:text-blue-500 text-yellow-300 focus:ring-current"
                     checked={agree}
                     onChange={handleAgreement}
                   />
@@ -284,7 +284,7 @@ const Form = ({ searchQuery, handleInputChange, handleSearch }) => {
                     I agree to the{" "}
                     <a
                       href="/users-agreement"
-                      className="text-indigo-900 font-semibold hover:underline"
+                      className="md:text-sky-400 text-yellow-300 font-semibold hover:underline"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -294,9 +294,8 @@ const Form = ({ searchQuery, handleInputChange, handleSearch }) => {
                 </div>
                 {/* end of Users Agreement */}
                 {/* end of dropdowns */}
-
                 <button
-                  className="md:static absolute bottom-[-150px] left-[-120px] btn btn-primary w-52 lg:w-full md:w-2/2 mt-10 md:mt-24 md:ml-5 lg:ml-72"
+                  className="md:static absolute bottom-[-80px] left-[-120px] btn btn-primary w-52 lg:w-full md:w-2/2 mt-10 md:mt-24 md:ml-5 lg:ml-72"
                   onClick={onSearchClick}
                 >
                   <BiSearchAlt size={24} />
