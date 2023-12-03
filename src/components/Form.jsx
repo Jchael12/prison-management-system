@@ -7,6 +7,7 @@ import image1 from "../assets/Group 1.png";
 import image2 from "../assets/Group 2.png";
 import image3 from "../assets/Group 3.png";
 
+import TermsAndConditionsModal from "./Terms";
 import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
 import Loader from "./Loader";
@@ -14,6 +15,11 @@ import Loader from "./Loader";
 const Form = ({ searchQuery, handleInputChange, handleSearch }) => {
   const [loading, setLoading] = useState(true);
   const [agree, setAgree] = useState(false);
+  const [showTerms, setShowTerms] = useState(false);
+
+  const handleTerms = () => {
+    setShowTerms(!showTerms);
+  };
 
   const handleAgreement = () => {
     setAgree(!agree);
@@ -283,7 +289,7 @@ const Form = ({ searchQuery, handleInputChange, handleSearch }) => {
                   <label htmlFor="agree" className="ml-2">
                     I agree to the{" "}
                     <a
-                      href="/users-agreement"
+                      onClick={handleTerms}
                       className="md:text-sky-400 text-yellow-300 font-semibold hover:underline"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -292,6 +298,7 @@ const Form = ({ searchQuery, handleInputChange, handleSearch }) => {
                     </a>
                   </label>
                 </div>
+                {showTerms && <TermsAndConditionsModal onClose={handleTerms} />}
                 {/* end of Users Agreement */}
                 {/* end of dropdowns */}
                 <button
