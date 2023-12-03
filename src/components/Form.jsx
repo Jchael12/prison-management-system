@@ -291,8 +291,6 @@ const Form = ({ searchQuery, handleInputChange, handleSearch }) => {
                     <a
                       onClick={handleTerms}
                       className="md:text-sky-400 text-yellow-300 font-semibold hover:underline"
-                      target="_blank"
-                      rel="noopener noreferrer"
                     >
                       Users Agreement
                     </a>
