@@ -288,12 +288,12 @@ const Form = ({ searchQuery, handleInputChange, handleSearch }) => {
                   />
                   <label htmlFor="agree" className="ml-2">
                     I agree to the{" "}
-                    <a
+                    <button
                       onClick={handleTerms}
-                      className="md:text-sky-400 text-yellow-300 font-semibold hover:underline"
+                      className="md:text-sky-600 text-yellow-300 hover:text-yellow-200 md:hover:text-sky-400 font-bold py-2 rounded"
                     >
-                      Users Agreement
-                    </a>
+                      User Agreements
+                    </button>
                   </label>
                 </div>
                 {showTerms && <TermsAndConditionsModal onClose={handleTerms} />}
