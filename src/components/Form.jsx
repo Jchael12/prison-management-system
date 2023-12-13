@@ -4,11 +4,11 @@ import { BiSearchAlt } from "react-icons/bi";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
+import TermsAndConditionsModal from "./Terms";
 import image1 from "../assets/Group 1.png";
 import image2 from "../assets/Group 2.png";
 import image3 from "../assets/Group 3.png";
 
-import TermsAndConditionsModal from "./Terms";
 import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
 import Loader from "./Loader";
@@ -19,9 +19,11 @@ const Form = ({ searchQuery, handleInputChange, handleSearch }) => {
   const [showTerms, setShowTerms] = useState(false);
   const [searchOptions, setSearchOptions] = useState("Name");
   const [showAlert, setShowAlert] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
   const handleTerms = () => {
     setShowTerms(!showTerms);
+    setShowModal(!showModal);
   };
 
   const handleAgreement = () => {
@@ -231,6 +233,7 @@ const Form = ({ searchQuery, handleInputChange, handleSearch }) => {
                     Please agree to the user terms and conditions.
                   </div>
                 )}
+                {showModal && <TermsAndConditionsModal onClose={handleTerms} />}
                 <h3 className="text-center my-4">
                   For more information you may be obtained by requesting to
                   doc.PDL@example.com

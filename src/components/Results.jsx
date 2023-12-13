@@ -169,6 +169,18 @@ const Results = ({ searchResults, handleBackToSearch, resetForm }) => {
                     <h1 className="">Case #</h1>
                     <h1 className="">Offense Type</h1>
                   </div>
+                  <div className="flex items-center justify-between text-md px-10 font-semibold w-7/12 overflow-hidden mx-auto h-8 mt-2">
+                    <h1 className="">{result.sentence_date}</h1>
+                    <h1 className="absolute left-[48rem]">
+                      {result.sentence_length}
+                    </h1>
+                    <h1 className="absolute left-[68rem]">
+                      {result.case_number}
+                    </h1>
+                    <h1 className="absolute left-[84rem]">
+                      {result.offense_type}
+                    </h1>
+                  </div>
                 </div>
               </ul>
             );
