@@ -152,6 +152,23 @@ const Results = ({ searchResults, handleBackToSearch, resetForm }) => {
                       {result.status}
                     </span>
                   </h1>
+                  <h1 className="absolute top-80 text-md font-bold">
+                    Release Date:{" "}
+                    <span className="text-red-600 font-semibold uppercase">
+                      {result.release_date}
+                    </span>
+                  </h1>
+                </div>
+                <div className="absolute bottom-48 left-0 text-2xl w-screen">
+                  <h1 className="relative ml-[25rem]">
+                    Current Prison Sentence History
+                  </h1>
+                  <div className="bg-gray-200 text-gray-600 flex items-center justify-between text-sm px-10 uppercase font-semibold w-7/12 overflow-hidden mx-auto h-8 mt-2">
+                    <h1 className="">Sentence Date</h1>
+                    <h1 className="">Sentence Length</h1>
+                    <h1 className="">Case #</h1>
+                    <h1 className="">Offense Type</h1>
+                  </div>
                 </div>
               </ul>
             );
