@@ -20,6 +20,7 @@ const inmateData = [
     marital_status: "Married",
     height: "155.3 cm",
     weight: "53.34 kgs",
+    release_date: "January 01, 2025",
     sentence_date: "2022/12/05",
     sentence_length: "2025/12/05",
     offense_type: "Criminal Attempt",

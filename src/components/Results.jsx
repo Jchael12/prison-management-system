@@ -152,14 +152,12 @@ const Results = ({ searchResults, handleBackToSearch, resetForm }) => {
                       {result.status}
                     </span>
                   </h1>
-                  <h1 className="absolute top-80 text-md font-bold">
-                    Release Date:{" "}
-                    <span className="text-red-600 font-semibold uppercase">
-                      {result.release_date}
-                    </span>
-                  </h1>
+                  <div className="absolute flex items-center justify-between top-80 w-56">
+                    <h1 className="text-md font-bold ">Release Date: </h1>
+                    <h2>{result.release_date}</h2>
+                  </div>
                 </div>
-                <div className="absolute bottom-48 left-0 text-2xl w-screen">
+                <div className="absolute bottom-36 left-0 text-2xl w-screen">
                   <h1 className="relative ml-[25rem]">
                     Current Prison Sentence History
                   </h1>
